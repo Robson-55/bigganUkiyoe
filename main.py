@@ -120,10 +120,10 @@ def main():
             gan.train()
 
             # visualize learned generator
-            gan.visualize_results(args.epoch == 1)
-            gan.visualize_results50(args.epoch == 1)
-            gan.visualize_results100(args.epoch == 1)
-            gan.visualize_results200(args.epoch == 1)
+            gan.visualize_results(args.epoch == 50) #2x2 generation
+            gan.visualize_results50(args.epoch == 100) #4x4 generation
+            gan.visualize_results100(args.epoch == 200) #8x8 generation
+            gan.visualize_results200(args.epoch == 20) #single generation
 
             print(" [*] Training finished!")
 
